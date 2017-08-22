@@ -1,0 +1,238 @@
+
+<!--HOME PAGE HTML-->
+<!DOCTYPE html>
+  <html>
+    <head>
+      <center>
+      <link href="https://fonts.googleapis.com/css?family=Bilbo+Swash+Caps|Open+Sans+Condensed:300|Arsenal" rel="stylesheet">
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script type="text/javascript" src="smoothscroll.js/smoothscroll.js"></script>
+      <!-- I downloaded jquery files onto my computer for the smoothscroll-->
+    </head>
+    <style>
+    html {
+        overflow: auto;
+    }
+
+    body {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        padding: 30px;
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    /*This is the scrollbar*/
+    ::-webkit-scrollbar {
+        width: 12px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+
+        background-color: #fcf4d9;
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+    }
+
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        -webkit-border-radius: 10px;
+        border-radius: 10px;
+        background-color: white;
+        background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0) 50%, transparent, transparent)
+
+    }
+
+
+
+body {
+  background-color:#fcf4d9;
+}
+
+body {margin-top:0;}
+.navbar {
+  overflow: hidden;
+  background-color: #fcf4d9;
+  bottom: 8px;
+  width: 100%;
+}
+
+.navbar a {
+  float: right;
+  display: block;
+  color:'gray';
+  font-family: 'Arsenal';
+  text-align: center;
+  padding: 14px 16px;
+  text-transform:uppercase;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+  text-decoration: line-through;
+}
+
+/** DIV's for each circle floaties**/
+
+#myDIV {
+    color: white;
+    -webkit-animation: myOrbit 4.2s infinite;
+    animation: myOrbit 4.2s infinite;
+}
+#myDIV1 {
+    color: white;
+    -webkit-animation: myOrbit 5s infinite;
+    animation: myOrbit 5s infinite;
+}
+#myDIV2 {
+    color: white;
+    -webkit-animation: myOrbit 6s infinite;
+    animation: myOrbit 6s infinite;
+}
+#myDIV3 {
+    color: white;
+    -webkit-animation: myOrbit 4s infinite;
+    animation: myOrbit 4s infinite;
+}
+
+#myDIV4 {
+    color: white;
+    -webkit-animation: myOrbit 3s infinite;
+    animation: myOrbit 3s infinite;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myOrbit
+    from { -webkit-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(20px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(20px) rotate(-360deg); }
+}
+
+
+
+
+
+div0 {
+    position: absolute;
+    left: 600px;
+    top: 900px;
+}
+
+
+div1 {
+    position: absolute;
+    left: 170px;
+    top: 1120px;
+}
+
+div2 {
+    position: absolute;
+    left: 400px;
+    top: 1350px;
+}
+div3 {
+    position: absolute;
+    left: 820px;
+    top: 1350px;
+}
+div4 {
+    position: absolute;
+    left: 1050px;
+    top: 1120px;
+}
+
+
+
+
+
+</style>
+
+<body><br>
+
+<div style="position:relative">
+  <a href=#welcome class="smoothScroll">
+<img src="titlenew.gif" width=100%>
+</a>
+</div>
+
+
+<p>
+  <img src="walkwalk.gif" width=100%>
+</p>
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+
+
+<br><br><br><br><br><br><br><br><br id=welcome><br><br><br><br>
+
+<div0 id="myDIV">
+  <a href = "art.html">
+  <img title= "Stop poking me!" src="articonicon.png" width="200" height="200" onmouseover="this.src='articonicon1.png';" onmouseout="this.src='articonicon.png';" />
+</a>
+</div0>
+
+<div1 id="myDIV1">
+  <a href = "music.html">
+  <img title= "Stop poking me!" src="musiciconicon.png" width="200" height="200" onmouseover="this.src='musiciconicon1.png';" onmouseout="this.src='musiciconicon.png';" />
+</a>
+</div1>
+
+<div2 id="myDIV2">
+  <a href = "landmarks.html">
+  <img title= "Stop poking me!" src="historyiconicon.png" width="200" height="200"onmouseover="this.src='historyiconicon1.png';" onmouseout="this.src='historyiconicon.png';" />
+</a>
+</div2>
+
+<div3 id="myDIV3">
+  <a href = "parks.html">
+  <img title= "Stop poking me!" src="parkiconicon.png" width="200" height="200" onmouseover="this.src='parkiconicon1.png';" onmouseout="this.src='parkiconicon.png';" />
+</a>
+</div3>
+
+<div4 id="myDIV4">
+  <a href = "museums.html">
+  <img title= "Stop poking me!" src="museumiconicon.png" width="200" height="200" onmouseover="this.src='museumiconicon1.png';" onmouseout="this.src='museumiconicon.png';" />
+</a>
+</div4>
+<br><br><br><br><br><br>
+<center>
+<p style="font-family:Open Sans Condensed;font-size:300%">What do you want to do today? </p>
+</center>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="navbar" id="navbar" text-align="center">
+  <a href="references.html" style=color:gray>References</a>
+  <a href="aboutus.html" style=color:gray>About Us</a>
+
+
+</div>
+
+</body>
+  </html>

@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<!--this is importing the css-->
+<link href="https://fonts.googleapis.com/css?family=Arsenal|Pathway+Gothic+One|" rel="stylesheet">
+
+
+<head>
+  <title> Art </title>
+</head>
+
+<style>
+
+
+/*this is the border around the map*/
+article {
+    margin-left:250px;
+    margin-right: 250px;
+    padding-top: 4em;
+    padding-bottom: 4em;
+    overflow: hidden;
+    background-color: #FF7A5A;
+  }
+/*css for the links/categories*/
+a{
+  text-decoration: none;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Arsenal', sans-serif;
+  text-transform:uppercase;
+  color: white;
+  font-size: 25px;
+}
+
+a:visited{
+text-decoration: none;
+padding-left: 50px;
+padding-right: 50px;
+
+}
+a:hover{
+text-decoration: line-through;
+color:#F4BC8C;
+}
+
+a:active{
+color:#F4BC8C;
+}
+
+
+
+
+/*This is the navigation bar*/
+body {}
+.navbar {
+  overflow: hidden;
+  padding-left:7px;
+  width: 230px;
+}
+
+.navbar a {
+  display: inline-block;
+  color: #FAFAFA;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+  font-size: 17px;
+}
+.navbar a:hover {
+    text-decoration: line-through;
+    color: white;
+}
+
+
+
+/*This is the scrollbar*/
+html {
+    overflow: auto;
+}
+
+body {
+    position: absolute;
+    top: -25px;
+    left: 10px;
+    right: 0px;
+    padding: 20px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #fcf4d9;
+}
+
+
+
+
+
+.button {
+  background-color:transparent;
+  font-family: 'Pathway Gothic One', sans-serif;
+  font-family: 'Arsenal', sans-serif;
+  text-transform:uppercase;
+  color: gray;
+  font-size: 18px;
+  padding-right: 35px;
+  padding-left: -3px;
+  border:transparent;
+  cursor: pointer;
+}
+
+.button:hover{
+text-decoration: line-through;
+color:#9d9d9d;
+}
+
+.button:active{
+color:#9d9d9d;
+}
+
+
+
+.bubblegum a {
+color:#FF7A5A;
+padding-left:-50px;
+padding-right:50px;
+}
+
+.bubblegum a:visited {
+text-decoration: none;
+color:#FF7A5A;
+padding-left: 50px;
+padding-right: 50px;
+}
+
+.bubblegum a:hover {
+text-decoration: line-through;
+color: #F4BC8C;
+}
+
+
+h4 {
+  color:#D7CEC8;
+  font-family:'Arsenal', sans-serif;
+}
+
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+
+    background-color: #fcf4d9;
+    left: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+}
+
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: white;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0) 50%, transparent, transparent)
+
+}
+
+
+
+
+/*this is for the place text*/
+h3{
+text-align: center;
+font-size: 150%;
+color: white;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Arsenal', sans-serif;
+}
+p{
+color: white;
+font-family: 'Pathway Gothic One', sans-serif;
+font-family: 'Arsenal', sans-serif;
+text-align: center;
+margin-left: 230px;
+margin-right: 230px;
+font-size: 120%;
+}
+
+
+</style>
+
+<body>
+
+<!--this is the header-->
+
+
+  <pre>
+  <center><a href="homepage.html" style=color:#FCF4D9><img src= "artborder.png" width="800px">
+  <img src="freegray.png"width="300px"></a></center>
+  </pre>
+
+
+<!--these are the categories/links -->
+<nav class="bubblegum" id="bubblegum">
+  <ul>
+    <center>
+    <a href="Museums.html">Museums</a>
+      <a href="Music.html">Music</a>
+      <a href="Parks.html">Parks</a>
+      <a> <strong>Art</strong> </a>
+    <a href="Landmarks.html">Landmarks</a>
+  </center>
+</ul>
+</nav>
+
+
+
+
+
+<center>
+  <input type="button" class="button" onclick="HideMap()" value="List View" >
+  <input type="button" class="button" onclick="HideList()" value="Map View">
+</center>
+<br><br>
+
+<!-- import Google Maps -->
+<article>
+<center>
+<h4 id="title"></h4>
+<br>
+
+<h3 id="Bmural_name"></h3>
+<p id="Bmural_address"></p>
+<p id="Bmural_information"></p>
+
+<h3 id="Gwall_name"></h3>
+<p id="Gwall_address"></p>
+<p id="Gwall_information"></p>
+
+<h3 id="duck_name"></h3>
+<p id="duck_address"></p>
+<p id="duck_information"></p>
+
+<h3 id="Tindians_name"></h3>
+<p id="Tindians_address"></p>
+<p id="Tindians_information"></p>
+
+<h3 id="niel_name"></h3>
+<p id="niel_address"></p>
+<p id="niel_information"></p>
+
+<h3 id="alch_name"></h3>
+<p id="alch_address"></p>
+<p id="alch_information"></p>
+
+
+  <script src="ArtMap.js" type="text/javascript"></script>
+    <div id="googleMap" style="width:800px; height:600px;"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC9Qtkq-nt3mZNAFEzhyEC_9SophskHYOg&callback=Art"></script>
+</center>
+
+<h3 id="name"></h3>
+<p id="information"></p>
+<p id="directions"></p>
+
+
+
+<br><br>
+</article>
+
+<!-- this is calling the navbar in html-->
+<center>
+<div class="navbar" id="navbar">
+
+  <a href="aboutus.html" style=color:gray> About Us </a>
+  <a href="references.html" style=color:gray>References</a>
+
+</div>
+</center>
+
+</body>
+</html>

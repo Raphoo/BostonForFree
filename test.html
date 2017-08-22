@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="testk.css" rel="stylesheet" />
+</head>
+<body>
+<style>
+
+
+#myDIV {
+    color: white;
+    -webkit-animation: myOrbit 7s infinite;
+    animation: myOrbit 7s infinite;
+}
+
+
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myOrbit {
+    from { -webkit-transform: rotate(0deg) translateX(300px) rotate(0deg); }
+    to   { -webkit-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@-moz-keyframes myOrbit {
+    from { -moz-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { -moz-transform: rotate(360deg) translateX(250px) rotate(-360deg); }
+}
+
+@-o-keyframes myOrbit {
+    from { -o-transform: rotate(0deg) translateX(100px) rotate(0deg); }
+    to   { -o-transform: rotate(360deg) translateX(300px) rotate(-360deg); }
+}
+
+@keyframes myOrbit {
+    from { transform: rotate(0deg) translateX(60px) rotate(0deg); }
+    to   { transform: rotate(360deg) translateX(60px) rotate(-360deg); }
+}
+</style>
+
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<center>
+<div id="myDIV">
+  <img title= "Stop poking me!" src="cloud.png" width="160" height="130" id="notmyDIV">
+</div>
+
+
+</body>
+<html>
