@@ -282,7 +282,7 @@ function Art() {
       BetancesMural.setIcon(icon);
       BetancesMural.setMap(map);
       ClickPin(BetancesMural, "'Betances Mural' by Lilli Ann Killen Rosenberg", "Villa Victoria, 85 W Newton St, Boston, MA 02118",
-      "This mural highlights the Puerto Rican heritage of many residents in the area.", "https://google.com");
+      "This mural highlights the Puerto Rican heritage of many residents in the area.", "https://www.google.com/maps/place/Villa+Victoria+Center+for+the+Arts/@42.3409714,-71.0779983,17z/data=!3m1!4b1!4m5!3m4!1s0x89e37a14829615a9:0x88a5f477009837bf!8m2!3d42.3409714!4d-71.0758096");
 
     var GraffitiWall = new google.maps.Marker({position:new google.maps.LatLng(42.364903, -71.102288)});
       GraffitiWall.setIcon(icon);
